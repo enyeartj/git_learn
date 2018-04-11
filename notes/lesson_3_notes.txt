@@ -1,3 +1,17 @@
 To cache your github password in git:
     https://help.github.com/articles/caching-your-github-password-in-git/
 
+Check remote repositorites current repo is linked to:
+    git remote
+
+Add a new remote repository after you make it on github:
+    git remote add <remote_name> <remote_url>
+    (remote_name is usually "origin")
+
+Get verbose information (push and fetch) on remotes:
+    git remote -v
+
+Push a branch to the remote (just going to call it "origin" from now on):
+    git push origin <branch_name>
+
+
