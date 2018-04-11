@@ -14,4 +14,8 @@ Get verbose information (push and fetch) on remotes:
 Push a branch to the remote (just going to call it "origin" from now on):
     git push origin <branch_name>
 
+You can create files on GitHub and then pull/fetch to local:
+    git pull origin master
+    (git pull <remote> <branch>)
+
 
