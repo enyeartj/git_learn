@@ -1,0 +1,65 @@
+To start a new repository:
+    1. go to directory that will become repository and initialize
+        git init
+    (Note: git init doesn't commit anything)
+
+Check status of a git repository:
+    git status
+
+Add files to "staging area":
+    git add <filename>
+    (must commit after adding)
+If you accidentally add a file to the staging area, you can remove it:
+    git reset <filename>
+
+To check differences between working directory and staging area files:
+    git diff
+To check differences between staging area and most recent commit
+    git diff --staged
+
+Discard any changes in working directory or staging area:
+    git reset --hard
+    (BE VERY CAREFUL WITH THIS! YOU WILL LOSE CHANGES MADE)
+    Run these before a hard reset to make sure
+        git diff
+        git diff --staged
+
+Go to tip of a branch:
+    git checkout <branch_name>
+
+Show current branches:
+    git branch
+
+Create new branch
+    git branch <new_branch_name>
+
+Show visual representation of commit history for 2 branches:
+    git log --graph --oneline <branch1> <branch2>
+
+You can make commits to a detached head but they won't be saved in repo unless
+you start a new branch. You can do this as follows:
+    git checkout -b new_branch_name
+    SAME AS:
+        git branch new_branch_name
+        git checkout new_branch_name
+
+If you make commits that are unreachable, garbage collection will eventually
+clean them up, but you can force this with:
+    git gc
+
+To merge two branches:
+    git merge <branch1> <branch2>
+    (merged branch will be called <branch1>)
+
+After merging, diffing two adjacent commits can show a big difference even
+though the commits were small. To compare a commit to its parent, use:
+    git show <commit_id>
+
+After merge, you might not need one of the branches that was merged anymore.
+Delete it like this:
+    git branch -d <branch_to_delete>
+    (will only delete branch label, not commits in branch)
+
+You may want to periodically merge master into other branches to keep them up to
+date
+    git merge experimental_branch master
