@@ -1,0 +1,3 @@
+To cache your github password in git:
+    https://help.github.com/articles/caching-your-github-password-in-git/
+
