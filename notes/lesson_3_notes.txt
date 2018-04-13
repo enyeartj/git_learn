@@ -18,4 +18,28 @@ You can create files on GitHub and then pull/fetch to local:
     git pull origin master
     (git pull <remote> <branch>)
 
+You can "clone" a GitHub repo using GitHub's Fork
+Once you Fork, you can clone to your local machine
+    git clone <repo_url>
+And check that remote is setup
+    git remote -v
+
+Add collaborators to a GitHub repo by going to repo settings>Collaborators
+
+To get the version on the remote while leaving yours alone, run:
+    git fetch <remote>
+You can then use
+    git log
+    git diff
+To see what differences are between local and remote repositories
+
+git pull first performs a fetch and then merges local branch into remote, ie:
+    git pull origin master
+    SAME AS:
+    git fetch origin
+    git merge origin origin/master
+
+To view both local AND remote branches, use:
+    git branch -a
+
 
