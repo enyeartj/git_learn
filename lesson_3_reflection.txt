@@ -25,9 +25,13 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Collaborating without git or github could be done with other version control
+    software like mercurial, or it can be done manually by saving multiple
+    versions of files and keeping track of the changes.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    You want to make changes in a separate branch if you're not the one in
+    charge of the repository. Then you can do pull requests if you want your
+    code merged in with the master branch.

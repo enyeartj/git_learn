@@ -42,4 +42,9 @@ git pull first performs a fetch and then merges local branch into remote, ie:
 To view both local AND remote branches, use:
     git branch -a
 
-
+When collaborating on GitHub, you should generally make a new branch for
+changes:
+    git branch <change_branch>
+    git checkout <change_branch>
+Make and commit the changes, and then do a Pull Request on github
+    go to your new branch, then click New Pull Request
