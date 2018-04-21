@@ -48,3 +48,16 @@ changes:
     git checkout <change_branch>
 Make and commit the changes, and then do a Pull Request on github
     go to your new branch, then click New Pull Request
+
+Sometimes your fork of the remote (origin) will be out of sync with the
+repository on GitHub. You can get the updated version (usually called
+"upstream")
+    git remote add upstream <URL>
+    git checkout master
+You can then merge with your changed branch
+    git pull upstream master
+    git merge master changed_branch
+Then push changed branch back to fork
+    git add changed_file
+    git commit
+    git push origin master
